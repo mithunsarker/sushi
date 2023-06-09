@@ -1,0 +1,358 @@
+.info{
+    background:#fab2ff;
+}
+
+body{
+    font-family: 'Lobster', cursive;
+    color:#c9c1ac;
+    background: url(../img/2.jpg)center/cover fixed no-repeat;
+
+
+}
+
+.primary-color{
+    color:#d3323f;
+}
+.info h2{
+    word-spacing:0.6rem;
+}
+.info a{
+    transition: color 2s ease-in-out;
+}
+
+.info a:hover{
+    color:#242424;
+}
+
+/* header section */
+
+#header{
+    min-height: calc(100vh - 94px);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/background.jpg);
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position:
+}
+.height-90{
+    min-height: calc(100vh - 94px);
+
+}
+.banner h1{
+    border-top:6px dotted #fab2ff;
+    border-bottom:6px dotted #fab2ff;
+    animation:fromLeft;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes fromLeft{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50%{
+        transition: translateX(30px);
+    }
+    100%{
+        transition: translateX(0);
+        opacity: 1;
+    }
+}
+.main-btn{
+    color:#d3323f;
+    font-size:2rem;
+    border: 2px solid #d3323f;
+    transition: all 1s ease-in-out;
+}
+.main-btn:hover{
+    color:#242424;
+    border: 2px solid #c9c9c9;
+    background: #fab2ff;
+}
+
+.sushi-btn{
+    animation:fromRight;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes fromRight{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    50%{
+        transition: translateX(-30px);
+    }
+    100%{
+        transition: translateX(0);
+        opacity: 1;
+    }
+}
+
+.header-link{
+    display:inline-block;
+    position: absolute;
+    bottom:5%;
+    left:50%;
+    background:#c9c1ac;
+    border-radius: 10px;
+    transition: all 2s ease;
+    animation:frombottom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes frombottom {
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+
+/* navbar style*/
+.navbar{
+    background:#c9c1ac;
+    padding:20px 20px;
+    transition: all 1s ease;
+}
+.navbar-background{
+    padding:5px 20px;
+}
+.navbar-brand{
+    font-size: 30px;
+    transition: all 1s ease;
+}
+.navbar-brand:hover{
+    color:#242424;
+}
+.nav-link{
+    color:#242424;
+    text-decoration: none;
+    transition:all 2s ease;
+    font-size:23px;
+}
+.nav-link:hover{
+    color:#d3323f;
+}
+.nav-btn{
+    background:transparent;
+    color:#d3323f;
+    border:2px solid #d3323f;
+    transition: all 2s ease;
+}
+.nav-btn:hover{
+    color:#242424;
+    border:2px solid #242424;
+    transform:rotate(10deg);
+}
+.toggler-btn{
+    border:2px solid #d3323f;
+    padding:5px;
+    transition:all 2s ease;
+
+}
+.bar{
+    width:30px;
+    height:3px;
+    margin:5px;
+    background:#d3323f;
+    transition:all 0.5 ease;
+}
+.change .bar1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.change .bar2{
+    opacity: 0;
+}
+.change .bar3{
+    transform: rotate(45deg) translate(-5px,-8px);
+}
+
+
+////////////////////////////////////////////////////
+.item-container{
+    position: relative;
+    /* for the link*/
+    overflow:hidden;
+    background:linear-gradient(rgba(0,0,0),rgba(0,0,0));
+    transition: all 2s ease;
+}
+.item-img{
+    transition: all 2s ease;
+}
+.item-container:hover .item-img{
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+.item-link{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:#d3323f;
+    font-size: 2rem;
+    border-top:3px solid #d3323f;
+    border-bottom:3px solid #d3323f;
+    transition: all 2s ease;
+    opacity: 0;
+   
+}
+.item-container:hover .item-link{
+    opacity: 1;
+}
+.item-link:hover{
+    color: #c9c1c9;
+    border:3px solid #c9c1ac;
+    background: #c9c1ac;
+    color: #242424;
+}
+.item-container:hover{
+    outline: 10px solid #d3323f;
+    outline-offset: 0.6rem;
+}
+#menu{
+    background:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),url(../img/5.jpg)center/cover fixed no-repeat;
+}
+.special{
+    border:3px solid #d3323f;
+    position:relative;
+}
+.special-text{
+    position: absolute;
+    top:0;
+    right:10%;
+    background:#d3323f;
+    padding:0 0.4rem;
+}
+
+/*about section*/
+.about-pictures{
+    position: relative;
+}
+.about-image{
+    position:absolute;
+    width:150px;
+    transition: all 2s ease;
+    opacity:0.9;
+}
+.img-1{
+    left:0%;
+    top:0%;
+}
+.img-2{
+    left:20%;
+    top:20%;
+    z-index: 10;
+}
+
+.img-3{
+    left:40%;
+    top:45%;
+    z-index: 20;
+}
+
+.img-4{
+    left:40%;
+    top:0%;
+
+}
+
+.img-5{
+    left:0%;
+    top:45%;
+
+}
+.about-image:hover{
+    outline:10px solid #d3323f;
+    outline-offset: 0.6rem;
+    transform: scale(1.3) rotate(20deg);
+    z-index: 30;
+    opacity:1;
+}
+.about-pictures:hover .about-image:not(:hover){
+    opacity: 0.2;
+}
+/*review section*/
+
+.review-item{
+    background:rgba(255,255,255,0.7);
+    clip-path:polygon(5% 0,100% 0,90% 100%,0 100%);
+
+}
+
+.review-img{
+    width:150px;
+    margin-left:50px;
+}
+.review-text{
+    margin-right:30px;
+}
+.team-icons a{
+    color:#3b5998;
+    transition: all 2s ease-in-out;
+}
+.team-icons a:hover{
+    color:#342424;
+}
+
+/* Contact Section*/
+.height-60{
+    min-height: 60vh;
+}
+#contact .card{
+    background:rgba(0,0,0,0.5);
+    transition: all 2s ease;
+}
+#contact .card:hover{
+    background:rgba(0,0,0,0.8);
+}
+#contact .card-header{
+    color:#d3323f;
+}
+#contact .input-group-text{
+    background:#d3323f;
+    border-color:#d3323f;
+    color:#242424;
+    height: 50px;
+}
+#contact .card input{
+    color: #606060;
+    
+}
+#contact .card input::placeholder{
+    color:#606060;
+}
+.contact-btn{
+    color:#d3323f;
+    border-color:#d3323f;
+    background:transparent;
+    transition:all 2s ease-in-out;
+}
+.contact-btn:hover{
+    background:#c9c1ac;
+    color:#d3323f;
+    border-color:#c9c1ac;
+}
+
+/*footer*/
+#back-to-top{
+    background:#c9c1ac;
+    border-radius:10px;
+    display:inline-block;
+}
+.scroll-top{
+    position: fixed;
+    bottom:70px;
+    right:10px;
+}
